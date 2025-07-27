@@ -1,21 +1,41 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #252229;
+  --foreground: #EBE6F2;
 }
+
+ @font-face {
+      font-family: 'RedHatText';
+      src: url('/font/RedHatText') format('truetype');
+      font-weight: normal;
+      font-style: normal; 
+    }
+
+@font-face {
+      font-family: 'UbuntuRegular';
+      src: url('/fonts/Ubuntu-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal; 
+    }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --font-red-hat-text: 'RedHatText', sans-serif;
+  --font-ubuntu: 'UbuntuRegular', sans-serif;  
+
+  --color-sexy-purple: #6600FF;
+  --color-sexy-pink: #F00088;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #252229;
+    --foreground: #EBE6F2;
   }
 }
 
