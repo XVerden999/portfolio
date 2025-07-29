@@ -12,10 +12,10 @@ function Hero() {
             <p>I&apos;m a Full Stack Developer, Entrepreneur and Student.</p>
             <p>I love all things <span className='bg-gradient-to-r from-sexy-purple to-sexy-pink bg-clip-text text-transparent'>Tech, Business and Managment</span> related.</p>
         
-            <ul className='flex text-xl gap-4'>
-                <li>LinkdinImg</li>
-                <li>GitHubImg</li>
-                <li>GmailImg</li>
+            <ul className='flex text-xl gap-5 ml-2'>
+                <li><Image className='w-8 cursor-pointer' src={'/linkedin.png'} alt='' height={200} width={200}></Image></li>
+                <li><Image className='w-8 cursor-pointer' src={'/github.png'} alt='' height={200} width={200}></Image></li>
+                <li><Image className='w-8 cursor-pointer' src={'/gmail.png'} alt='' height={200} width={200}></Image></li>
             </ul>
         </div>
 
