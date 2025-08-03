@@ -10,7 +10,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useGSAP(() => {
-    let split = SplitText.create(".header-group", { type: "chars" });
+    const split = SplitText.create(".header-group", { type: "chars" });
     gsap.fromTo(split.chars, {
       y: 3,
       opacity: 0,
@@ -49,11 +49,12 @@ function Header() {
 
       <nav className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
         <ul className="flex space-x-4 text-[#e34fa3] font-ubuntu header-group text-lg">
-          <p>/*</p>
+          <p>{'/*'}</p>
           <li id="li" className='hover:text-sexy-pink cursor-pointer'><a href="#aboutSection">About</a></li>
           <li id="li" className='hover:text-sexy-pink cursor-pointer'><a href="#skillsSection">Skills</a></li>
+          <li id="li" className='hover:text-sexy-pink cursor-pointer'><a href="#storySection">My Story</a></li>
           <li id="li" className='hover:text-sexy-pink cursor-pointer'><a href="#contactSection">Contact</a></li>
-          <p>*/</p>
+          <p>{'*/'}</p>
         </ul>
       </nav>
 
@@ -71,11 +72,12 @@ function Header() {
 
       {menuOpen && (
         <nav className="bg-background absolute top-16 left-0 right-0 px-6 py-4 flex flex-col space-y-4 text-[#e34fa3] font-ubuntu text-lg z-10">
-          <p>/*</p>
+          <p>{'/*'}</p>
           <a href="#aboutSection" onClick={() => setMenuOpen(false)} className="hover:text-sexy-pink cursor-pointer">About</a>
           <a href="#skillsSection" onClick={() => setMenuOpen(false)} className="hover:text-sexy-pink cursor-pointer">Skills</a>
+          <a href="#storySection" onClick={() => setMenuOpen(false)} className="hover:text-sexy-pink cursor-pointer">My Story</a>
           <a href="#contactSection" onClick={() => setMenuOpen(false)} className="hover:text-sexy-pink cursor-pointer">Contact</a>
-          <p>*/</p>
+          <p>{'*/'}</p>
         </nav>
       )}
     </header>

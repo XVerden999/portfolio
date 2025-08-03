@@ -15,6 +15,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Nicholis Grobler Portfolio",
   description: "The Portfolio of Developer, Entrepreneur and Student Nicholis Grobler!",
+  icons: {
+      icon: '/xvNew.png',
+    },
+
+  openGraph: {
+      title: 'Nicholis Grobler Portfolio',
+      description: 'The Portfolio of Developer, Entrepreneur and Student Nicholis Grobler!',
+      url: 'https://nicholis-grobler.xverden.com/',
+      siteName: 'Nicholis Grobler Portfolio',
+      images: [
+        {
+          url: 'https://nicholis-grobler.xverden.com/xvNew.png',
+          width: 1200,
+          height: 630,
+          alt: 'XVerden Logo!',
+        },
+      ],
+      type: 'website',
+    },
 };
 
 export default function RootLayout({

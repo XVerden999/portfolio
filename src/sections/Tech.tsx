@@ -8,7 +8,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText);
 
 function Tech() {
   useGSAP(() => {
-    let split = SplitText.create(".header-group1", { type: "chars" });
+    const split = SplitText.create(".header-group1", { type: "chars" });
     gsap.fromTo(
       split.chars,
       {
@@ -121,7 +121,7 @@ function Tech() {
 
         <div className='mx-auto flex flex-col justify-center items-center w-full lg:w-1/3'>
           <h1 className='text-4xl font-red-hat-text mb-4 text-[#e34fa3] header-group1 text-center'>
-            /* My language stack over 7 years */
+            {'/* My language stack over 7 years */'}
           </h1>
           <div className='grid grid-cols-2 sm:grid-cols-4 gap-8 w-full'>
             <div className='flex flex-col justify-center items-center devStack'>

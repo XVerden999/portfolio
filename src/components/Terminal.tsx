@@ -10,7 +10,7 @@ gsap.registerPlugin(useGSAP, SplitText);
 function Terminal() {
 
     useGSAP(()=>{
-            let tl = gsap.timeline();
+            const tl = gsap.timeline();
             tl.fromTo("#box", {
                 width: '0%',
                 height: '0%',
@@ -38,7 +38,7 @@ function Terminal() {
                 y:0,
             });
 
-          let split = SplitText.create(".myText", { type: "chars" });
+          const split = SplitText.create(".myText", { type: "chars" });
 
           gsap.fromTo(split.chars, { 
             //delay: 3,
@@ -87,7 +87,7 @@ function Terminal() {
 
             <div className='bg-background fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[1000] p-6 rounded-2xl shadow-lg 
             flex flex-col justify-center items-center'>
-            <p className='mb-4'>Terminal cannot be closed because a process 'Portfolio' is running!</p>
+            <p className='mb-4'>Terminal cannot be closed because a process &apos;Portfolio&apos; is running!</p>
             <button 
                 onClick={() => SetIsOpen(false)} 
                 className='bg-sexy-purple px-4 py-2 rounded cursor-pointer'

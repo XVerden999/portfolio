@@ -33,13 +33,13 @@ function Story() {
   }, []);
 
   return (
-    <section className='min-h-screen mt-16 flex flex-col justify-center items-center font-ubuntu text-2xl text-center mx-6 sm:mx-16 lg:mx-64 gap-4'>
+    <section id='storySection' className='min-h-screen mt-16 flex flex-col justify-center items-center font-ubuntu text-2xl text-center mx-6 sm:mx-16 lg:mx-64 gap-4'>
       <h1 id='titleStory1' className='font-red-hat-text text-5xl sm:text-7xl bg-gradient-to-r from-sexy-purple to-sexy-pink bg-clip-text text-transparent h-20'>{'<MyStory/>'}</h1>
       <p className='paragraph1 opacity-0 max-w-3xl'>
         I started programming at the age of 12 when my home computer couldn&apos;t run the games I wanted to play. Naturally, as a young and curious child, I came up with a solution:
       </p>
       <p className='paragraph1 opacity-0 max-w-3xl'>
-        "<span className='text-sexy-pink'>Why don&apos;t i just make my own games</span>"
+        &quot;<span className='text-sexy-pink'>Why don&apos;t i just make my own games</span>&quot;
       </p>
       <p className='paragraph1 opacity-0 max-w-3xl'>
         and that&apos;s how i started programming with C# in the Unity game engine at age 12.
