@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Nicholis Grobler Portfolio",
   description: "The Portfolio of Developer, Entrepreneur and Student Nicholis Grobler!",
   icons: {
-      icon: '/xvNew.png',
+      icon: '/xvNewRound.png',
     },
 
   openGraph: {
